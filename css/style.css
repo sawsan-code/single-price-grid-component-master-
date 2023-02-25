@@ -1,0 +1,170 @@
+* {
+  margin     : 0;
+  padding    : 0;
+  box-sizing : border-box;
+  font-family: "Karla", sans-serif;
+  font-weight: 400;
+}
+
+:root {
+  --Cyan         : hsl(179, 62%, 43%);
+  --Bright-Yellow: hsl(71, 73%, 54%);
+  --Light-Gray   : hsl(204, 43%, 93%);
+  --Grayish-Blue : hsl(218, 22%, 67%);
+  font-size      : 16px;
+}
+
+.attribution {
+  font-size : 11px;
+  text-align: center;
+  position  : absolute;
+  right     : 0;
+  bottom    : 0rem;
+  color     : black;
+}
+
+.attribution a {
+  color: var(--Cyan);
+}
+
+body {
+  min-height     : 100vh;
+  width          : 100%;
+  background     : var(--Light-Gray);
+  display        : flex;
+  justify-content: center;
+  align-items    : center;
+}
+
+.main-card {
+  width: 70%;
+}
+
+.card1 {
+  display              : grid;
+  grid-template-rows   : 1fr;
+  background-color     : white;
+  padding              : 1rem;
+  border-radius        : 0.5rem 0.5rem 0 0;
+  -webkit-border-radius: 0.5rem 0.5rem 0 0;
+  -moz-border-radius   : 0.5rem 0.5rem 0 0;
+  -ms-border-radius    : 0.5rem 0.5rem 0 0;
+  -o-border-radius     : 0.5rem 0.5rem 0 0;
+}
+
+.card1 p {
+  color: var(--Grayish-Blue);
+}
+
+.card1 h3 {
+  color: var(--Bright-Yellow);
+}
+
+.card2 {
+  background-color     : var(--Cyan);
+  padding              : 1rem;
+  border-radius        : 0 0 0 0.5rem;
+  -webkit-border-radius: 0 0 0 0.5rem;
+  -moz-border-radius   : 0 0 0 0.5rem;
+  -ms-border-radius    : 0 0 0 0.5rem;
+  -o-border-radius     : 0 0 0 0.5rem;
+}
+
+.card2 h3 {
+  color: white;
+}
+
+
+
+
+.card3 {
+  background-color     : rgb(76, 218, 218);
+  color                : var(--Light-Gray);
+  padding              : 1rem;
+  border-radius        : 0 0 0.5rem 0;
+  -webkit-border-radius: 0 0 0.5rem 0;
+  -moz-border-radius   : 0 0 0.5rem 0;
+  -ms-border-radius    : 0 0 0.5rem 0;
+  -o-border-radius     : 0 0 0.5rem 0;
+}
+
+.card3 h3,
+p {
+  color: white;
+}
+
+.card3 h3 {
+  font-size: 1.5rem;
+}
+
+h1 {
+  color      : var(--Cyan);
+  font-weight: 700;
+  font-size  : 2rem;
+  margin     : 1rem;
+}
+
+p {
+  font-size  : 1.1rem;
+  margin     : 1rem;
+  line-height: 1.5rem;
+}
+
+h3 {
+  margin: 1rem;
+}
+
+button {
+  background-color     : var(--Bright-Yellow);
+  border               : transparent;
+  padding              : 1rem;
+  margin               : 1rem;
+  border-radius        : 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius   : 0.5rem;
+  -ms-border-radius    : 0.5rem;
+  -o-border-radius     : 0.5rem;
+  width                : 80%;
+  color                : white;
+  font-size            : 1.2rem;
+}
+
+.gridy {
+  display              : grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.flex {
+  display    : flex;
+  align-items: center;
+
+}
+
+.flex h2 {
+  margin     : 0 1rem;
+  font-weight: 700;
+  color      : white;
+}
+
+.flex {
+  color: var(--Light-Gray);
+}
+
+@media (max-width: 750px) {
+  .gridy {
+    display       : flex;
+    flex-direction: column;
+  }
+
+  .attribution {
+    display: none;
+  }
+
+  .card1 {
+    margin-top: 1rem;
+  }
+
+  .card3 {
+    margin-bottom: 1rem;
+  }
+}
