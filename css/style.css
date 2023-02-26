@@ -37,7 +37,7 @@ body {
 }
 
 .main-card {
-  width: 70%;
+  max-width: 37.5rem;
 }
 
 .card1 {
